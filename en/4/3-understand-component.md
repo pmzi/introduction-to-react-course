@@ -10,11 +10,11 @@ Here's an example of a simple React component:
 
 ```js
 function Greeting(props) {
-  return <h1>Hello, {props.name}!</h1>;
+  return (<h1>Hello, {props.name}!</h1>);
 }
 ```
 
-This component is called "Greeting", and it takes a single prop called "name". The component returns a <h1> element that says "Hello, {props.name}!", where {props.name} is replaced with the value of the "name" prop.
+This component is called "Greeting", and it takes a single prop called "name". The component returns a `<h1>` element that says "Hello, {props.name}!", where {props.name} is replaced with the value of the "name" prop.
 
 ## Function Components vs. Class Components
 
@@ -22,23 +22,23 @@ There are two types of components in React: function components and class compon
 
 Function components are the simpler of the two, and they're just JavaScript functions that return a React element. Here's an example:
 
-```js
+```jsx
 function Greeting(props) {
-  return <h1>Hello, {props.name}!</h1>;
+  return (<h1>Hello, {props.name}!</h1>);
 }
 ```
 
 Class components are a bit more complex, but they offer some additional features like local state and lifecycle methods. Here's an example of a class component:
 
-```js
+```jsx
 class Greeting extends React.Component {
   render() {
-    return <h1>Hello, {this.props.name}!</h1>;
+    return (<h1>Hello, {this.props.name}!</h1>);
   }
 }
 ```
 
-This class component is also called "Greeting", and it has a single prop called "name". The component's render method returns a <h1> element that says "Hello, {this.props.name}!", where {this.props.name} is replaced with the value of the "name" prop.
+This class component is also called "Greeting", and it has a single prop called "name". The component's render method returns a `<h1>` element that says "Hello, {this.props.name}!", where {this.props.name} is replaced with the value of the "name" prop.
 
 ## Composing Components
 
@@ -77,4 +77,4 @@ function HeaderWithNavigation(props) {
 }
 ```
 
-This "HeaderWithNavigation" component renders a <div> element that contains a "Header" component and a "Navigation" component.
+This "HeaderWithNavigation" component renders a `<div>` element that contains a "Header" component and a "Navigation" component.

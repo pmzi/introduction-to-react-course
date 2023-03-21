@@ -6,7 +6,7 @@ import {
 export default defineConfig({
   title: "Introduction to React",
   description: "Getting started with React (MFT Course)",
-  base: 'intro-to-react',
+  base: '/intro-to-react',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [{
